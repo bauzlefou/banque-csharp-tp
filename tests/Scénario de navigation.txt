@@ -1,0 +1,9 @@
+1. Ouvrir la page d'accueil (http://192.168.18.104/)
+3. Vérifier la présence du titre : Bienvenue sur votre Banque en ligne !!!
+4. Cliquer sur le lien "Accès client"
+5. Vérifier la présence du titre : Identification Client
+6. Vérifier la présence du champ : Identifiant
+7. Vérifier la présence du champ : Mot de passe
+8. Vérifier la présence du bouton : Valider
+9. Cliquer sur le lien "Nous Contacter"
+10. Vérifier la présence du titre : Nous contacter

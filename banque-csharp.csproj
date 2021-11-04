@@ -12,7 +12,7 @@
     <PackageReference Include="Nunit" Version="3.12.0" />
     <PackageReference Include="Nunit3TestAdapter" Version="3.17.0" />
     <PackageReference Include="NunitXml.TestLogger" Version="2.1.80" />
-    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.0.1" />
   </ItemGroup>
 
 </Project>

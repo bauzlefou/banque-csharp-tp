@@ -1,0 +1,148 @@
+{
+  "id": "c6db5afe-ec8b-42fa-98b2-bdfd229bf60c",
+  "version": "2.0",
+  "name": "Banque",
+  "url": "http://192.168.18.104",
+  "tests": [{
+    "id": "334f45a7-e5a4-4d8b-8455-c763d94041c7",
+    "name": "Navigation Principale",
+    "commands": [{
+      "id": "b5a59697-337e-4f38-a5ae-deab58d1e34c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2de7748b-abe6-421f-85b5-a527080abc66",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05f6efe9-fc17-4a67-868e-42f1e92ec8a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Bienvenue sur votre Banque en ligne !!!')]", "xpath:innerText"]
+      ],
+      "value": "Bienvenue sur votre Banque en ligne !!!"
+    }, {
+      "id": "83247b59-f631-4e75-9776-89a4eac7dd63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accès client",
+      "targets": [
+        ["linkText=Accès client", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Accès client')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'identification.eni')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accès client')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "381d3e00-3180-48c3-8fe0-3b3f6d792452",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='main']/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Identification Client')]", "xpath:innerText"]
+      ],
+      "value": "Identification Client"
+    }, {
+      "id": "8489b686-0882-457c-bacd-a850deb0e237",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=authIdentifiant",
+      "targets": [
+        ["id=authIdentifiant", "id"],
+        ["name=identifiant", "name"],
+        ["css=#authIdentifiant", "css:finder"],
+        ["xpath=//input[@id='authIdentifiant']", "xpath:attributes"],
+        ["xpath=//div[@id='identifiantField']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "341d23bb-5220-4dde-8961-a006b794730d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=authMotdepasse",
+      "targets": [
+        ["id=authMotdepasse", "id"],
+        ["name=motDePasse", "name"],
+        ["css=#authMotdepasse", "css:finder"],
+        ["xpath=//input[@id='authMotdepasse']", "xpath:attributes"],
+        ["xpath=//div[@id='motdepasseField']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53877e5d-9d04-49dd-b0bf-6fc67433bca7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='identificationForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Valider')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5cddf07-8d81-45dd-85b6-dd8dae2b1323",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nous Contacter",
+      "targets": [
+        ["linkText=Nous Contacter", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Nous Contacter')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'contact.eni')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nous Contacter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a732100-0229-4963-b39e-ee1e82cd66e2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='main']/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Nous contacter')]", "xpath:innerText"]
+      ],
+      "value": "Nous contacter"
+    }, {
+      "id": "be429d0f-fa2e-4cc8-95f0-6639f219e2f1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fd7d227d-d6f6-4790-9c32-6b279fd854ad",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["334f45a7-e5a4-4d8b-8455-c763d94041c7"]
+  }],
+  "urls": ["http://192.168.18.104/"],
+  "plugins": []
+}
