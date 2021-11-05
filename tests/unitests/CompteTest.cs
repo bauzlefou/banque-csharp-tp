@@ -50,7 +50,7 @@ namespace banque_simple
         public void testSetRefClient()
         {
             compte.ReferenceClient = "demo@demo.com";
-            Assert.AreEqual("demo@demo.com", compte.ReferenceClient);
+            Assert.AreEqual("demo@demo1.com", compte.ReferenceClient);
         }
 
         [Test]
